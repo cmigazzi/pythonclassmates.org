@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python I/O - tuto</title><link href="https://www.pythonclassmates.org/" rel="alternate"></link><link href="https://www.pythonclassmates.org/feeds/tuto.atom.xml" rel="self"></link><id>https://www.pythonclassmates.org/</id><updated>2019-01-09T15:29:00+01:00</updated><subtitle>Articles et news par des Pythonistas passionnés</subtitle><entry><title>Installer Pelican</title><link href="https://www.pythonclassmates.org/installer-pelican.html" rel="alternate"></link><published>2019-01-09T15:29:00+01:00</published><updated>2019-01-09T15:29:00+01:00</updated><author><name>Freezed</name></author><id>tag:www.pythonclassmates.org,2019-01-09:/installer-pelican.html</id><summary type="html">&lt;p&gt;Installation rapide de &lt;em&gt;Pelican&lt;/em&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Démarrage rapide&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;C'est une traduction basique du &lt;a href="https://docs.getpelican.com/en/4.0.1/quickstart.html"&gt;démarrage rapide&lt;/a&gt; officiel&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Créez le répertoire&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;projects&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;yoursite&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;projects&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;yoursite&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Créez un environnement virtuel&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;virtualenv&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nb"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;python3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nb"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installez &lt;em&gt;Pelican&lt;/em&gt; et markdown (si besoin, optionnel)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="n"&gt;markdown&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Créez le squelette de l'arborescence&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;quickstart&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pour les questions avec une réponse entre crochet, appuyez sur &lt;code&gt;Entrée&lt;/code&gt; pour acceptez cette valeur. Quand il vous sera demandé le préfixe de votre URL, entrez votre nom de domaine comme indiqué (&lt;code&gt;http://example.com&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;Créez un article&lt;/h2&gt;
+&lt;p&gt;Vous ne pourrez lancer &lt;em&gt;Pelican&lt;/em&gt; tant qu'il n'y a pas d'article. Utilisez votre éditeur préféré pour créez votre premier article avec le contenu suivant :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;My&lt;/span&gt; &lt;span class="n"&gt;First&lt;/span&gt; &lt;span class="n"&gt;Review&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2010&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mo"&gt;03&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Review&lt;/span&gt;
+
+&lt;span class="n"&gt;Following&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;my&lt;/span&gt; &lt;span class="n"&gt;favorite&lt;/span&gt; &lt;span class="n"&gt;mechanical&lt;/span&gt; &lt;span class="n"&gt;keyboard&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Considerant que cet article est au format Markdown, enregistrez le en tant que &lt;code&gt;~/projects/yoursite/content/keyboard-review.md.&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Générez le site&lt;/h2&gt;
+&lt;p&gt;Toujours depuis le répertoire, lancez la commande &lt;em&gt;Pelican&lt;/em&gt; pour générez votre site&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="n"&gt;content&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Votre site à été généré dans le répertoire &lt;code&gt;output&lt;/code&gt;. Peut-être aurez vous un message d'alerte relatif aux &lt;em&gt;flux&lt;/em&gt;, c'est normal en développement et vous pouvez l'ignorer&lt;/p&gt;
+&lt;h1&gt;Prévisualisation du site&lt;/h1&gt;
+&lt;p&gt;Ouvrez une session de terminal depuis le répertoire d'installation  et lancez la commande suivante :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;listen&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Rendez vous à l'adresse &lt;a href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt; à l'aide de votre navigateur, c'est parfait !&lt;/p&gt;</content><category term="web"></category><category term="python"></category><category term="pelican"></category></entry></feed>
